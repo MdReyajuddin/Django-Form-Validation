@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+
+{% for product in products %}
+    <h2>{{product.title}}</h2>
+    <h4>{{product.email}}</h4>
+    <h4>{{product.active}}</h4>
+    <h4>{{product.created_on}}</h4>
+    <h4>{{product.last_logged_in}}</h4>
+
+{% endfor %}
+</body>
+</html>
